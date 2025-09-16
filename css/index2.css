@@ -75,9 +75,18 @@ body {
     border-color: #e75480;
 }
 @media (max-width: 500px) {
+    body {
+        align-items: flex-start;
+        min-height: 100vh;
+        height: auto;
+        padding: 0;
+    }
     .video-card {
         width: 98vw;
+        min-width: 0;
         padding: 24px 4vw 18px 4vw;
+        margin: 32px auto 0 auto;
+        box-sizing: border-box;
     }
     .video-title {
         font-size: 1.3rem;
@@ -89,5 +98,9 @@ body {
     .video-btn {
         font-size: 0.95rem;
         padding: 7px 12px;
+    }
+    .video-controls {
+        flex-direction: column;
+        gap: 12px;
     }
 }
